@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  position: relative;
+  overflow-x: hidden;
+  background-color: black;
+  perspective: 850px;
+}
+
+.list {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  transform-style: preserve-3d;
+}
+
+.image {
+  position: absolute;
+  left: calc(50% - 300px);
+  margin: 40px auto;
+  width: 600px;
+  height: 100%;
+  background: center center / 100% 100% no-repeat;
+  cursor: pointer;
+  transition: all 2s;
+}
+
+.left-button, .right-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: calc(40px + 150px - 50px);
+  z-index: 99;
+  width: 40px;
+  height: 100px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 62px;
+  text-align: center;
+  line-height: 100px;
+  user-select: none;
+}
+
+.left-button {
+  left: 80px;
+}
+
+.right-button {
+  right: 80px;
+}
